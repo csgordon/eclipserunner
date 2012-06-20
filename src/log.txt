@@ -1,0 +1,480 @@
+javac -J-Xbootclasspath/p:/homes/gws/csgordon/research/guitypes/checker/binary/jsr308-all.jar -Xmaxerrs 999 -cp /homes/gws/csgordon/research/guitypes/checker/dist/lib/guitypes-20120516.jar:/homes/gws/csgordon/research/experiments/EclipseRunner/lib/mockito-all-1.8.2.jar:/homes/gws/csgordon/research/experiments/EclipseRunner/lib/junit-4.8.1.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.navigator_3.5.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.ide_3.7.0.dist.jar:/usr/lib/eclipse/dropins/jdt/plugins/org.eclipse.jdt.ui_3.7.0.dist.jar:/usr/lib/eclipse/dropins/jdt/plugins/org.eclipse.jdt.core_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.navigator.resources_3.4.300.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.debug.core_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.debug.ui_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.resources_3.7.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_64_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.swt_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.jface_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.commands_3.6.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.workbench_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.runtime_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.osgi_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.equinox.common_3.6.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.jobs_3.5.100.dist.jar:/usr/lib/ecliplse/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.0.dist/runtime_registry_compatibility.jar:/usr/lib/eclipse/plugins/org.eclipse.equinox.registry_3.5.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.equinox.preferences_3.4.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.contenttype_3.4.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.equinox.app_1.3.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.forms_3.5.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.workbench.texteditor_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.net_1.2.100.dist.jar -processor guitypes.checkers.GUIEffectsChecker
+./com/eclipserunner/model/ICategoryNodeChangeListener.java ./com/eclipserunner/model/adapters/RunnerModelJdtSelectionListenerAdapter.java ./com/eclipserunner/model/adapters/RunnerModelTreeWithTypesAdapter.java ./com/eclipserunner/model/adapters/RunnerModelTreeAdapter.java ./com/eclipserunner/model/adapters/RunnerModelLaunchConfigurationListenerAdapter.java ./com/eclipserunner/model/common/AbstractFilter.java ./com/eclipserunner/model/common/RunnerModelDelegatingDecorator.java ./com/eclipserunner/model/common/CategoryDelegatingDecorator.java ./com/eclipserunner/model/IBookmarkable.java ./com/eclipserunner/model/filters/RunnerModelFilteringDecorator.java ./com/eclipserunner/model/filters/CategoryFilteringDecorator.java ./com/eclipserunner/model/filters/BookmarkFilter.java ./com/eclipserunner/model/filters/ProjectFilter.java ./com/eclipserunner/model/filters/DeletedProjectsFilter.java ./com/eclipserunner/model/filters/DefaultCategoryFilter.java ./com/eclipserunner/model/filters/WorkingSetFilter.java ./com/eclipserunner/model/filters/ClosedProjectsFilter.java ./com/eclipserunner/model/IDroppable.java ./com/eclipserunner/model/IModelChangeListener.java ./com/eclipserunner/model/ILaunchNodeChangeListener.java ./com/eclipserunner/model/INodeSelection.java ./com/eclipserunner/model/impl/LaunchTypeNode.java ./com/eclipserunner/model/impl/CategoryNode.java ./com/eclipserunner/model/impl/RunnerModel.java ./com/eclipserunner/model/impl/LaunchNode.java ./com/eclipserunner/model/INodeFilter.java ./com/eclipserunner/model/RunnerModelProvider.java ./com/eclipserunner/model/ILaunchNode.java ./com/eclipserunner/model/IActionEnablement.java ./com/eclipserunner/model/ILaunchTypeNode.java ./com/eclipserunner/model/IRunnerModel.java ./com/eclipserunner/model/ICategoryNode.java ./com/eclipserunner/model/IFilteredRunnerModel.java ./com/eclipserunner/utils/SelectionUtils.java ./com/eclipserunner/Messages.java ./com/eclipserunner/RunnerPlugin.java ./com/eclipserunner/PreferenceConstants.java ./com/eclipserunner/RunnerStateExternalizer.java ./com/eclipserunner/views/TreeMode.java ./com/eclipserunner/views/impl/RunnerView.java ./com/eclipserunner/views/impl/RunnerViewSelection.java ./com/eclipserunner/views/impl/LaunchTreeLabelProvider.java ./com/eclipserunner/views/actions/ToggleTreeModeAction.java ./com/eclipserunner/views/actions/AbstractLaunchAction.java ./com/eclipserunner/views/actions/ToggleFilterAction.java ./com/eclipserunner/views/actions/Image.java ./com/eclipserunner/views/actions/RemoveConfigOrCategoryAction.java ./com/eclipserunner/views/actions/BookmarkAction.java ./com/eclipserunner/views/actions/ToggleRunModeAction.java ./com/eclipserunner/views/actions/ExpandAllAction.java ./com/eclipserunner/views/actions/AddNewCategoryAction.java ./com/eclipserunner/views/actions/OpenItemAction.java ./com/eclipserunner/views/actions/MoveToCategoryAction.java ./com/eclipserunner/views/actions/LaunchConfigurationAction.java ./com/eclipserunner/views/actions/CollapseAllAction.java ./com/eclipserunner/views/actions/BaseRunnerAction.java ./com/eclipserunner/views/actions/LaunchActionBuilder.java ./com/eclipserunner/views/actions/RenameConfigOrCategoryAction.java ./com/eclipserunner/views/actions/ShowLaunchConfigurationsDialogAction.java ./com/eclipserunner/views/validators/CategoryNameValidator.java ./com/eclipserunner/views/validators/LaunchConfigurationNameValidator.java ./com/eclipserunner/views/IRunnerView.java ./com/eclipserunner/ui/dnd/RunnerViewDropListener.java ./com/eclipserunner/ui/dnd/RunnerViewDragListener.java ./eclipserunner/Activator.java
+./com/eclipserunner/model/adapters/RunnerModelJdtSelectionListenerAdapter.java:104: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			return structuredSelection.getFirstElement();
+			                                          ^
+./com/eclipserunner/views/impl/RunnerView.java:138: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		patternFilter.setIncludeLeadingWildcard(true);
+		                                       ^
+./com/eclipserunner/views/impl/RunnerView.java:142: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		viewer = tree.getViewer();
+		                       ^
+./com/eclipserunner/views/impl/RunnerView.java:145: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		viewer.setLabelProvider(new LaunchTreeLabelProvider(runnerModel));
+		                       ^
+./com/eclipserunner/views/impl/RunnerView.java:146: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		viewer.addDoubleClickListener(this);
+		                             ^
+./com/eclipserunner/views/impl/RunnerView.java:147: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		viewer.setInput(getViewSite());
+		               ^
+./com/eclipserunner/views/impl/RunnerView.java:147: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		viewer.setInput(getViewSite());
+		                           ^
+./com/eclipserunner/views/impl/RunnerView.java:150: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getSite().setSelectionProvider(viewer);
+		                              ^
+./com/eclipserunner/views/impl/RunnerView.java:150: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getSite().setSelectionProvider(viewer);
+		       ^
+./com/eclipserunner/views/impl/RunnerView.java:156: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			getSite().getWorkbenchWindow().getSelectionService().addSelectionListener(partId, selectionListener);
+			                                                                         ^
+./com/eclipserunner/views/impl/RunnerView.java:156: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			getSite().getWorkbenchWindow().getSelectionService().addSelectionListener(partId, selectionListener);
+			                                                  ^
+./com/eclipserunner/views/impl/RunnerView.java:156: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			getSite().getWorkbenchWindow().getSelectionService().addSelectionListener(partId, selectionListener);
+			                            ^
+./com/eclipserunner/views/impl/RunnerView.java:156: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			getSite().getWorkbenchWindow().getSelectionService().addSelectionListener(partId, selectionListener);
+			       ^
+./com/eclipserunner/views/impl/RunnerView.java:191: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			LocalSelectionTransfer.getTransfer(), FileTransfer.getInstance()
+			                                  ^
+./com/eclipserunner/views/impl/RunnerView.java:191: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			LocalSelectionTransfer.getTransfer(), FileTransfer.getInstance()
+			                                                              ^
+./com/eclipserunner/views/impl/RunnerView.java:194: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getViewer().addDragSupport(operations, transferTypes, new RunnerViewDragListener(getViewer()));
+		                          ^
+./com/eclipserunner/views/impl/RunnerView.java:195: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getViewer().addDropSupport(operations, transferTypes, new RunnerViewDropListener(getViewer()));
+		                          ^
+./com/eclipserunner/views/impl/RunnerView.java:214: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			getSite().getWorkbenchWindow().getSelectionService().removeSelectionListener(partId, selectionListener);
+			                                                                            ^
+./com/eclipserunner/views/impl/RunnerView.java:214: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			getSite().getWorkbenchWindow().getSelectionService().removeSelectionListener(partId, selectionListener);
+			                                                  ^
+./com/eclipserunner/views/impl/RunnerView.java:214: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			getSite().getWorkbenchWindow().getSelectionService().removeSelectionListener(partId, selectionListener);
+			                            ^
+./com/eclipserunner/views/impl/RunnerView.java:214: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			getSite().getWorkbenchWindow().getSelectionService().removeSelectionListener(partId, selectionListener);
+			       ^
+./com/eclipserunner/views/impl/RunnerView.java:225: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			JavaPlugin.getDefault().getPreferenceStore().removePropertyChangeListener(propertyChangeListener);
+			                                                                         ^
+./com/eclipserunner/views/impl/RunnerView.java:225: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			JavaPlugin.getDefault().getPreferenceStore().removePropertyChangeListener(propertyChangeListener);
+			                                          ^
+./com/eclipserunner/views/impl/RunnerView.java:263: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		menuMgr.setRemoveAllWhenShown(true);
+		                             ^
+./com/eclipserunner/views/impl/RunnerView.java:264: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		menuMgr.addMenuListener(this);
+		                       ^
+./com/eclipserunner/views/impl/RunnerView.java:266: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		Menu menu = menuMgr.createContextMenu(getViewerControl());
+		                                     ^
+./com/eclipserunner/views/impl/RunnerView.java:267: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getViewerControl().setMenu(menu);
+		                          ^
+./com/eclipserunner/views/impl/RunnerView.java:268: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getSite().registerContextMenu(menuMgr, viewer);
+		                             ^
+./com/eclipserunner/views/impl/RunnerView.java:268: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getSite().registerContextMenu(menuMgr, viewer);
+		       ^
+./com/eclipserunner/views/impl/RunnerView.java:272: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		IActionBars bars = getViewSite().getActionBars();
+		                                              ^
+./com/eclipserunner/views/impl/RunnerView.java:272: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		IActionBars bars = getViewSite().getActionBars();
+		                              ^
+./com/eclipserunner/views/impl/RunnerView.java:273: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		setupLocalPullDown(bars.getMenuManager());
+		                                      ^
+./com/eclipserunner/views/impl/RunnerView.java:274: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		setupLocalToolBar(bars.getToolBarManager());
+		                                        ^
+./com/eclipserunner/views/impl/RunnerView.java:278: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(addNewCategoryAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:279: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(new Separator());
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:280: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleFlatModeAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:281: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleTypeModeAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:282: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(new Separator());
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:283: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleClosedProjectFilterAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:284: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleDelectedProjectFilterAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:285: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleActiveWorkingSetFilterAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:286: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleActiveProjektFilterAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:287: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(new Separator());
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:288: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(showRunConfigurationsDialogAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:289: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(showDebugConfigurationsDialogAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:293: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleBookmarkModeAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:294: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleDefaultCategoryAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:295: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(toggleDefaultRunModeAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:296: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(new Separator());
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:297: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(addNewCategoryAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:298: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(new Separator());
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:299: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(collapseAllAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:300: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(expandAllAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:310: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			manager.add(launchRunConfigurationAction);
+			           ^
+./com/eclipserunner/views/impl/RunnerView.java:311: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			manager.add(launchDebugConfigurationAction);
+			           ^
+./com/eclipserunner/views/impl/RunnerView.java:312: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			manager.add(openItemAction);
+			           ^
+./com/eclipserunner/views/impl/RunnerView.java:313: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			manager.add(new Separator());
+			           ^
+./com/eclipserunner/views/impl/RunnerView.java:314: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+	        manager.add(moveToCategorySubMenu());
+	                   ^
+./com/eclipserunner/views/impl/RunnerView.java:315: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+	        manager.add(new Separator());
+	                   ^
+./com/eclipserunner/views/impl/RunnerView.java:317: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(addNewCategoryAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:318: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(new Separator());
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:319: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(renameAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:320: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(removeAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:321: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(new Separator());
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:322: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(bookmarkAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:323: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(unbookmarkAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:324: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(new Separator());
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:325: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(showRunConfigurationsDialogAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:326: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		manager.add(showDebugConfigurationsDialogAction);
+		           ^
+./com/eclipserunner/views/impl/RunnerView.java:334: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			managet.add(moveToCategoryAction(category));
+			           ^
+./com/eclipserunner/views/impl/RunnerView.java:344: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		launchRunConfigurationAction.setEnabled(selection.canBeLaunched());
+		                                       ^
+./com/eclipserunner/views/impl/RunnerView.java:345: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		launchDebugConfigurationAction.setEnabled(selection.canBeLaunched());
+		                                         ^
+./com/eclipserunner/views/impl/RunnerView.java:346: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		renameAction.setEnabled(selection.canBeRenamed());
+		                       ^
+./com/eclipserunner/views/impl/RunnerView.java:347: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		removeAction.setEnabled(selection.canBeRemoved());
+		                       ^
+./com/eclipserunner/views/impl/RunnerView.java:348: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		bookmarkAction.setEnabled(selection.canBeBookmarked());
+		                         ^
+./com/eclipserunner/views/impl/RunnerView.java:349: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		unbookmarkAction.setEnabled(selection.canBeBookmarked());
+		                           ^
+./com/eclipserunner/views/impl/RunnerView.java:350: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		openItemAction.setEnabled(selection.canBeOpened());
+		                         ^
+./com/eclipserunner/views/impl/RunnerView.java:362: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return RunnerPlugin.getDefault().getPreferenceStore().getBoolean(PreferenceConstants.RUN_MODE);
+		                                                                ^
+./com/eclipserunner/views/impl/RunnerView.java:362: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return RunnerPlugin.getDefault().getPreferenceStore().getBoolean(PreferenceConstants.RUN_MODE);
+		                                                   ^
+./com/eclipserunner/views/impl/RunnerView.java:379: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return (ITreeContentProvider) getViewer().getContentProvider();
+		                                                            ^
+./com/eclipserunner/views/impl/RunnerView.java:383: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return getViewer().getControl();
+		                             ^
+./com/eclipserunner/views/impl/RunnerView.java:398: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			toggleFlatModeAction.setChecked(false);
+			                               ^
+./com/eclipserunner/views/impl/RunnerView.java:399: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			toggleTypeModeAction.setChecked(true);
+			                               ^
+./com/eclipserunner/views/impl/RunnerView.java:401: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			toggleFlatModeAction.setChecked(true);
+			                               ^
+./com/eclipserunner/views/impl/RunnerView.java:402: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			toggleTypeModeAction.setChecked(false);
+			                               ^
+./com/eclipserunner/views/impl/RunnerView.java:407: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		viewer.setContentProvider(
+		                         ^
+./com/eclipserunner/views/impl/RunnerView.java:416: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getViewer().refresh();
+		                   ^
+./com/eclipserunner/model/common/AbstractFilter.java:37: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return preferenceStore.getBoolean(propery);
+		                                 ^
+./com/eclipserunner/views/actions/LaunchActionBuilder.java:276: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			action.setText(title);
+			              ^
+./com/eclipserunner/views/actions/LaunchActionBuilder.java:280: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			action.setToolTipText(tooltip);
+			                     ^
+./com/eclipserunner/views/actions/LaunchActionBuilder.java:293: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			action.setImageDescriptor(imageDescriptor);
+			                         ^
+./com/eclipserunner/views/actions/LaunchActionBuilder.java:297: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			return PlatformUI.getWorkbench().getSharedImages().getImageDescriptor(image);
+			                                                                     ^
+./com/eclipserunner/views/actions/LaunchActionBuilder.java:297: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			return PlatformUI.getWorkbench().getSharedImages().getImageDescriptor(image);
+			                                                ^
+./com/eclipserunner/views/actions/LaunchActionBuilder.java:297: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			return PlatformUI.getWorkbench().getSharedImages().getImageDescriptor(image);
+			                              ^
+./com/eclipserunner/views/impl/RunnerViewSelection.java:29: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return (T) getSelection().getFirstElement();
+		                                         ^
+./com/eclipserunner/views/impl/RunnerViewSelection.java:37: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return getSelection().size() == 1;
+		                          ^
+./com/eclipserunner/views/impl/RunnerViewSelection.java:41: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		Object firstElement = getSelection().getFirstElement();
+		                                                    ^
+./com/eclipserunner/views/impl/RunnerViewSelection.java:61: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			Object selectedNode = getSelection().getFirstElement();
+			                                                    ^
+./com/eclipserunner/views/impl/RunnerViewSelection.java:73: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		for (Object selectedNode : getSelection().toList()) {
+		                                                ^
+./com/eclipserunner/views/impl/RunnerViewSelection.java:112: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return (IStructuredSelection) treeViewer.getSelection();
+		                                                     ^
+./com/eclipserunner/model/adapters/RunnerModelTreeWithTypesAdapter.java:80: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		Object[] children = getChildren(launchNode.getCategoryNode());
+		                               ^
+./com/eclipserunner/model/filters/DeletedProjectsFilter.java:20: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			.select(null, null, launchNode.getLaunchConfiguration());
+			       ^
+./com/eclipserunner/model/filters/WorkingSetFilter.java:20: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			.select(null, null, launchNode.getLaunchConfiguration());
+			       ^
+./com/eclipserunner/model/filters/ClosedProjectsFilter.java:20: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			.select(null, null, launchNode.getLaunchConfiguration());
+			       ^
+./com/eclipserunner/model/RunnerModelProvider.java:98: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		getPreferenceStore().setValue(property, value);
+		                             ^
+./com/eclipserunner/model/RunnerModelProvider.java:102: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return getPreferenceStore().getString(preferenceValue);
+		                                     ^
+./com/eclipserunner/model/RunnerModelProvider.java:106: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return RunnerPlugin.getDefault().getPreferenceStore();
+		                                                   ^
+./com/eclipserunner/utils/SelectionUtils.java:27: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		Iterator<?> iterator = selection.iterator();
+		                                         ^
+./com/eclipserunner/utils/SelectionUtils.java:47: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		Iterator<?> iterator = selection.iterator();
+		                                         ^
+./com/eclipserunner/utils/SelectionUtils.java:60: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		Iterator<?> iterator = selection.iterator();
+		                                         ^
+./com/eclipserunner/RunnerPlugin.java:70: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		super.start(context);
+		           ^
+./com/eclipserunner/RunnerPlugin.java:81: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		super.stop(context);
+		          ^
+./com/eclipserunner/RunnerPlugin.java:104: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			imageDescriptor = imageDescriptorFromPlugin(getDefault().getBundle().getSymbolicName(), ICON_PATH + imageFileName);
+			                                           ^
+./com/eclipserunner/RunnerPlugin.java:114: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return Display.getCurrent().getActiveShell();
+		                                          ^
+./com/eclipserunner/RunnerPlugin.java:114: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return Display.getCurrent().getActiveShell();
+		                         ^
+./com/eclipserunner/RunnerPlugin.java:121: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		Display display = Display.getCurrent();
+		                                    ^
+./com/eclipserunner/views/impl/LaunchTreeLabelProvider.java:32: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		this.debugModelPresentation = DebugUITools.newDebugModelPresentation();
+		                                                                    ^
+./com/eclipserunner/views/impl/LaunchTreeLabelProvider.java:74: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		Image image = debugModelPresentation.getImage(launchConfiguration.getLaunchConfiguration());
+		                                             ^
+./com/eclipserunner/views/impl/LaunchTreeLabelProvider.java:82: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return debugModelPresentation.getImage(typeNode.getLaunchConfigurationType());
+		                                      ^
+./com/eclipserunner/views/impl/LaunchTreeLabelProvider.java:86: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return RunnerPlugin.getDefault().getImageDescriptor(image).createImage();
+		                                                                      ^
+./com/eclipserunner/views/impl/LaunchTreeLabelProvider.java:91: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return new DecorationOverlayIcon(image, decorationDescriptor, IDecoration.TOP_RIGHT).createImage();
+		                                                                                                ^
+./com/eclipserunner/views/actions/ToggleTreeModeAction.java:23: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			setChecked(true);
+			          ^
+./com/eclipserunner/views/actions/ToggleTreeModeAction.java:25: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			setChecked(false);
+			          ^
+./com/eclipserunner/views/actions/BaseRunnerAction.java:24: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return RunnerPlugin.getDefault().getPreferenceStore();
+		                                                   ^
+./com/eclipserunner/views/actions/BaseRunnerAction.java:32: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		MessageDialog.openError(getRunnerShell(), title, message);
+		                       ^
+./com/eclipserunner/views/actions/BaseRunnerAction.java:37: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		dialog.open();
+		           ^
+./com/eclipserunner/views/actions/BaseRunnerAction.java:42: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return MessageDialog.openConfirm(RunnerPlugin.getRunnerShell(), title, message);
+		                                ^
+./com/eclipserunner/views/actions/ToggleFilterAction.java:17: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		boolean active = getPreferenceStore().getBoolean(preferenceProperty);
+		                                                ^
+./com/eclipserunner/views/actions/ToggleFilterAction.java:18: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		setChecked(active);
+		          ^
+./com/eclipserunner/views/actions/ToggleFilterAction.java:23: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		getPreferenceStore().setValue(preferenceProperty, isChecked());
+		                             ^
+./com/eclipserunner/views/actions/ToggleFilterAction.java:23: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		getPreferenceStore().setValue(preferenceProperty, isChecked());
+		                                                           ^
+./com/eclipserunner/views/actions/ToggleRunModeAction.java:12: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		boolean active = getPreferenceStore().getBoolean(preferenceProperty);
+		                                                ^
+./com/eclipserunner/views/actions/ToggleRunModeAction.java:13: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		setChecked(active);
+		          ^
+./com/eclipserunner/views/actions/ToggleRunModeAction.java:18: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		getPreferenceStore().setValue(preferenceProperty, isChecked());
+		                             ^
+./com/eclipserunner/views/actions/ToggleRunModeAction.java:18: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		getPreferenceStore().setValue(preferenceProperty, isChecked());
+		                                                           ^
+./com/eclipserunner/views/actions/ExpandAllAction.java:19: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		viewer.expandAll();
+		                ^
+./com/eclipserunner/views/actions/AddNewCategoryAction.java:32: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		if (dialog.getReturnCode() == Window.OK) {
+		                        ^
+./com/eclipserunner/views/actions/AddNewCategoryAction.java:33: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+			ICategoryNode categoryNode = new CategoryNode(dialog.getValue());
+			                                                             ^
+./com/eclipserunner/views/actions/OpenItemAction.java:39: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+					IWorkbench workbench = PlatformUI.getWorkbench();
+					                                              ^
+./com/eclipserunner/views/actions/OpenItemAction.java:40: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+					IEditorDescriptor editor = workbench.getEditorRegistry().getDefaultEditor(file.getName());
+					                                                                         ^
+./com/eclipserunner/views/actions/OpenItemAction.java:40: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+					IEditorDescriptor editor = workbench.getEditorRegistry().getDefaultEditor(file.getName());
+					                                                      ^
+./com/eclipserunner/views/actions/OpenItemAction.java:42: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+					IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+					                                                                            ^
+./com/eclipserunner/views/actions/OpenItemAction.java:42: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+					IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+					                                                 ^
+./com/eclipserunner/views/actions/OpenItemAction.java:43: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+					IWorkbenchPage page = window.getActivePage();
+					                                          ^
+./com/eclipserunner/views/actions/OpenItemAction.java:45: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+					page.openEditor(new FileEditorInput(file), editor.getId());
+					               ^
+./com/eclipserunner/views/actions/OpenItemAction.java:45: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+					page.openEditor(new FileEditorInput(file), editor.getId());
+					                                                       ^
+./com/eclipserunner/views/actions/LaunchConfigurationAction.java:26: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+			DebugUITools.launch(
+			                   ^
+./com/eclipserunner/views/actions/LaunchConfigurationAction.java:28: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+				getLaunchConfigurationManager().getLaunchGroup(getLaunchGroupId()).getMode()
+				                                                                          ^
+./com/eclipserunner/views/actions/CollapseAllAction.java:19: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		viewer.collapseAll();
+		                  ^
+./com/eclipserunner/views/actions/RenameConfigOrCategoryAction.java:51: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			if (dialog.getReturnCode() == Window.OK) {
+			                        ^
+./com/eclipserunner/views/actions/RenameConfigOrCategoryAction.java:53: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+				workingCopy.rename(dialog.getValue().trim());
+				                                  ^
+./com/eclipserunner/views/actions/RenameConfigOrCategoryAction.java:64: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		if (dialog.getReturnCode() == Window.OK) {
+		                        ^
+./com/eclipserunner/views/actions/RenameConfigOrCategoryAction.java:65: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+			category.setName(dialog.getValue());
+			                                ^
+./com/eclipserunner/views/actions/ShowLaunchConfigurationsDialogAction.java:46: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		dialog.open();
+		           ^
+./com/eclipserunner/ui/dnd/RunnerViewDropListener.java:29: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		setFeedbackEnabled(true);
+		                  ^
+./com/eclipserunner/ui/dnd/RunnerViewDragListener.java:61: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return currentSelection == null || currentSelection.isEmpty();
+		                                                           ^
+./com/eclipserunner/ui/dnd/RunnerViewDragListener.java:65: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.SafeEffect effects.
+		return LocalSelectionTransfer.getTransfer();
+		                                         ^
+./eclipserunner/Activator.java:28: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		super.start(context);
+		           ^
+./eclipserunner/Activator.java:38: error: Calling a method with interface guitypes.checkers.quals.UIEffect effect from a context limited to interface guitypes.checkers.quals.PolyUIEffect effects.
+		super.stop(context);
+		          ^
+159 errors

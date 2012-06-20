@@ -1,0 +1,4 @@
+Initial # errors with correct classpath: 159
+158->76 by marking RunnerView @UIType
+Many of the initial count were from an incorrect marking of Eclipse's Display.getCurrent() as UI (it's safe, like getDefault())
+Confirmed Sai's bug find in 45 minutes: no new bugs.
