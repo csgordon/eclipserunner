@@ -8,7 +8,7 @@ import guitypes.checkers.quals.*;
  * @author vachacz
  */
 @UIType
-public class ExpandAllAction extends @UI Action {
+public class ExpandAllAction extends Action {
 
 	private TreeViewer viewer;
 

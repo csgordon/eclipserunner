@@ -20,7 +20,7 @@ import guitypes.checkers.quals.*;
  */
 @SuppressWarnings("restriction")
 @UIType
-public class BaseRunnerAction extends @UI Action {
+public class BaseRunnerAction extends Action {
 
 	protected IPreferenceStore getPreferenceStore() {
 		return RunnerPlugin.getDefault().getPreferenceStore();

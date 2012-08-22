@@ -22,7 +22,7 @@ import guitypes.checkers.quals.*;
  * @author lwachowi
  */
 @UIType
-public class OpenItemAction extends @UI Action {
+public class OpenItemAction extends Action {
 
 	private final INodeSelection selection;
 
