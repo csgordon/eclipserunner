@@ -3,7 +3,7 @@ package com.eclipserunner.views.actions;
 import org.eclipse.jface.action.Action;
 import org.eclipse.jface.viewers.TreeViewer;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * @author vachacz
  */

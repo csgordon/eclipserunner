@@ -14,7 +14,7 @@ import org.eclipse.ui.part.FileEditorInput;
 
 import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.INodeSelection;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * Opens selected item in editor, when possible.

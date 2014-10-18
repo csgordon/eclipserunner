@@ -14,7 +14,7 @@ import com.eclipserunner.model.IActionEnablement;
 import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.INodeSelection;
 import com.eclipserunner.utils.SelectionUtils;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 // TODO [LW] remove selection utils
 @UIType public class RunnerViewSelection implements INodeSelection {

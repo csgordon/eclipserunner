@@ -12,7 +12,7 @@ import org.eclipse.jface.preference.IPreferenceStore;
 
 import com.eclipserunner.RunnerPlugin;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Base action class wraps all static calls used by actions.
  * 

@@ -11,7 +11,7 @@ import com.eclipserunner.RunnerPlugin;
 import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.INodeSelection;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Action responsible for showing LaunchConfigurationsDialog.
  *

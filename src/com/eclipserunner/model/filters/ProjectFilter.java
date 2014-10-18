@@ -11,7 +11,7 @@ import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.common.AbstractFilter;
 
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 public class ProjectFilter extends AbstractFilter {
 
 	private String projectName;

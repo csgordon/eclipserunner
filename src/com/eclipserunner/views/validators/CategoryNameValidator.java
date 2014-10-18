@@ -8,7 +8,7 @@ import org.eclipse.jface.dialogs.IInputValidator;
 import com.eclipserunner.model.ICategoryNode;
 import com.eclipserunner.model.IRunnerModel;
 import com.eclipserunner.model.RunnerModelProvider;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * @author vachacz
  */

@@ -5,7 +5,7 @@ import org.eclipse.jface.action.Action;
 import com.eclipserunner.model.RunnerModelProvider;
 import com.eclipserunner.views.IRunnerView;
 import com.eclipserunner.views.TreeMode;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * @author vachacz

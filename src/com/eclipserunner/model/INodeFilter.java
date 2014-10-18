@@ -1,5 +1,5 @@
 package com.eclipserunner.model;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Filter node indicate if an object provided to filter methods should be skipped
  *

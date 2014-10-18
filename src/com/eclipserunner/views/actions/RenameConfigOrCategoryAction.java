@@ -17,7 +17,7 @@ import com.eclipserunner.model.IRunnerModel;
 import com.eclipserunner.views.validators.CategoryNameValidator;
 import com.eclipserunner.views.validators.LaunchConfigurationNameValidator;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * @author vachacz, bary
  */

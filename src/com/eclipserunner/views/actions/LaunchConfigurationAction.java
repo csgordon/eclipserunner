@@ -5,7 +5,7 @@ import org.eclipse.debug.ui.DebugUITools;
 import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.INodeSelection;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Action responsible for launching selected configuration.
  * 

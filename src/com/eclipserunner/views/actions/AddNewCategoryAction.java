@@ -10,7 +10,7 @@ import com.eclipserunner.model.ICategoryNode;
 import com.eclipserunner.model.IRunnerModel;
 import com.eclipserunner.model.impl.CategoryNode;
 import com.eclipserunner.views.validators.CategoryNameValidator;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * Action creates new empty category in plugin model.

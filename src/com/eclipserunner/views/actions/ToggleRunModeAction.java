@@ -1,6 +1,6 @@
 package com.eclipserunner.views.actions;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * @author tonyq
  */

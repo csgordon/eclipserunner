@@ -55,7 +55,7 @@ import com.eclipserunner.model.IRunnerModel;
 import com.eclipserunner.views.IRunnerView;
 import com.eclipserunner.views.TreeMode;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Builder creates Actions related to test launching
  *

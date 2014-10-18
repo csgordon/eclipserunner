@@ -2,7 +2,7 @@ package com.eclipserunner.views.actions;
 
 import com.eclipserunner.views.IRunnerView;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * @author vachacz

@@ -15,7 +15,7 @@ import org.eclipse.swt.dnd.TransferData;
 import com.eclipserunner.model.IDroppable;
 import com.eclipserunner.model.ILaunchNode;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Listener for handling drop events.
  *

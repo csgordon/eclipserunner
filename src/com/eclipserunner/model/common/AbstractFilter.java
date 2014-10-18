@@ -5,7 +5,7 @@ import org.eclipse.jface.preference.IPreferenceStore;
 import com.eclipserunner.model.ICategoryNode;
 import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.INodeFilter;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 public abstract class AbstractFilter implements INodeFilter {
 

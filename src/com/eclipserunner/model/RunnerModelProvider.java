@@ -17,7 +17,7 @@ import com.eclipserunner.model.filters.RunnerModelFilteringDecorator;
 import com.eclipserunner.model.filters.WorkingSetFilter;
 import com.eclipserunner.model.impl.RunnerModel;
 import com.eclipserunner.views.TreeMode;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * Access point for all model related instances.

@@ -51,7 +51,7 @@ import com.eclipserunner.ui.dnd.RunnerViewDropListener;
 import com.eclipserunner.views.IRunnerView;
 import com.eclipserunner.views.TreeMode;
 import com.eclipserunner.views.actions.LaunchActionBuilder;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * Class provides plugin eclipse View UI component.

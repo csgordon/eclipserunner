@@ -1,5 +1,5 @@
 package com.eclipserunner.views.actions;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * Abstract action depending on launch group id

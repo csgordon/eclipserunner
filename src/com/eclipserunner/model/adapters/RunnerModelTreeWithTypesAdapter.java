@@ -16,7 +16,7 @@ import com.eclipserunner.model.ILaunchTypeNode;
 import com.eclipserunner.model.IRunnerModel;
 import com.eclipserunner.model.impl.LaunchTypeNode;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Development code ... before refactoring.
  *

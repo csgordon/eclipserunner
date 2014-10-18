@@ -13,7 +13,7 @@ import com.eclipserunner.model.ICategoryNode;
 import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.ILaunchTypeNode;
 import com.eclipserunner.model.IRunnerModel;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * Launch configuration tree decorator.

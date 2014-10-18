@@ -15,7 +15,7 @@ import com.eclipserunner.model.IFilteredRunnerModel;
 import com.eclipserunner.model.INodeFilter;
 import com.eclipserunner.model.filters.ProjectFilter;
 import com.eclipserunner.views.impl.RunnerView;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Adapter listening for JDT selection events.
  * 

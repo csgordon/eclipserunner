@@ -2,7 +2,7 @@ package com.eclipserunner.model;
 
 import java.util.List;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * @author vachacz
  */

@@ -11,7 +11,7 @@ import org.eclipse.swt.dnd.DragSourceListener;
 
 import com.eclipserunner.model.ICategoryNode;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * Listener for handling drag events.
  * 

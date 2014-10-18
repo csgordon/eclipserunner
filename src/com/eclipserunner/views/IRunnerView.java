@@ -1,6 +1,6 @@
 package com.eclipserunner.views;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 public interface IRunnerView {
 
 	public void refresh();

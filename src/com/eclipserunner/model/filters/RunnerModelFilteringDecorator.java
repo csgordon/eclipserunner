@@ -10,7 +10,7 @@ import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.INodeFilter;
 import com.eclipserunner.model.IRunnerModel;
 import com.eclipserunner.model.common.RunnerModelDelegatingDecorator;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 public class RunnerModelFilteringDecorator extends RunnerModelDelegatingDecorator 
 		implements IFilteredRunnerModel, INodeFilter {

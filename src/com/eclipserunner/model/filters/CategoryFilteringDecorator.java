@@ -7,7 +7,7 @@ import com.eclipserunner.model.ICategoryNode;
 import com.eclipserunner.model.ILaunchNode;
 import com.eclipserunner.model.INodeFilter;
 import com.eclipserunner.model.common.CategoryDelegatingDecorator;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 public class CategoryFilteringDecorator extends CategoryDelegatingDecorator {
 
